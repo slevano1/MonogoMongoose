@@ -13,6 +13,11 @@ p {
     margin-left: 2%;
     margin-top: 2%;
 }
+/*navbar*/
+a.navbar-brand {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #bodyinput {
     width: 50%;
@@ -32,7 +37,9 @@ p {
 /*text within jumbotron*/
 #text {
       position:absolute;
+      font-family: Arial, Helvetica, sans-serif;
       color:#ff7d00;
+      text-shadow: 2px 3px #222222;
       font-weight: bold;
       left:10px;
       bottom:10px;
