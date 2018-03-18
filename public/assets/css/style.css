@@ -1,5 +1,7 @@
+
+
 html {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 li {
@@ -7,38 +9,63 @@ li {
 }
 
 p {
-	font-size: 17px;
-	margin-left: 2%;
-	margin-top: 2%;
+    font-size: 17px;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 #bodyinput {
     width: 50%;
 }
-
+/*NY Times image & jumbo*/
 .jumbotron {
-	overflow: hidden;
+    overflow: hidden;
     background-size: 50%;
+    background-size:cover;
+    color:white;
     background-position: center;
-    background-image: url('../images/nyt2.jpg');
+    background-image: url('../images/newyorktimes_120616getty.jpg');
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
 }
+/*text within jumbotron*/
+#text {
+      position:absolute;
+      color:#ff7d00;
+      font-weight: bold;
+      left:10px;
+      bottom:10px;
+      font-size:35px;
+}
 
+/*panels that hold the headlines*/
 .panel-heading.row {
-	width: 100%;
+    width: 100%;
     margin-left: 0%;
 }
 
 .panel-primary {
     height: 135px;
 }
-
+/*save button for modal*/
 #savenote {
     display: block;
+    padding: 5px;
 }
 
 @media screen and (max-width: 640px) {
 
+}
+/*modal styling*/
+.modal-content {
+    background-color: #c2c2d6;
+}
+
+textarea#bodyinput {
+    height: 100px;
+}
+
+h4#myModalLabel {
+    color: #ffffff;
 }
