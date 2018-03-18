@@ -1,0 +1,19 @@
+{
+  "name": "nytimes-scraper",
+  "version": "1.0.0",
+  "description": "news scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slevano1/MonogoMongoose.git"
+  },
+  "author": "Steven Levano 2018",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slevano1/MonogoMongoose/issues"
+  },
+  "homepage": "https://github.com/slevano1/MonogoMongoose#readme"
+}
