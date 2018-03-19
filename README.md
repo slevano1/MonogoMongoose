@@ -25,6 +25,6 @@ Run this command in your Terminal/Bash window:
 * This command will add the free mLab provision to your project.
 ```
 
-![.gif of working scraper file](assets/images/nyt.gif)
+<a href="https://imgflip.com/gif/26pn7e"><img src="https://i.imgflip.com/26pn7e.gif" title="made at imgflip.com"/></a>
 
 
