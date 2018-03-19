@@ -14,7 +14,9 @@ In this assignment, you'll create a web app that lets users view and leave comme
 
 ### Deployed to Heroku
 ```
-In order to deploy your project to Heroku, you must set up an mLab provision. mLab is remote MongoDB database that Heroku supports natively. Follow these steps to get it running:
+In order to deploy your project to Heroku, you must set up an mLab provision. 
+mLab is remote MongoDB database that Heroku supports natively. 
+Follow these steps to get it running:
 
 Create a Heroku app in your project directory.
 
