@@ -25,4 +25,6 @@ Run this command in your Terminal/Bash window:
 * This command will add the free mLab provision to your project.
 ```
 
-![.gif of working file](nyt.gif)
+![.gif of working scraper file](nyt.gif)
+
+
