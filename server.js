@@ -34,7 +34,7 @@ app.set('view engine', 'handlebars');
 var routes = require("./controllers/controller.js");
 app.use("/", routes);
 mongoose.connect("");
-//mongoose.connect('mongodb://localhost/model-news-scraper');
+
 var db = mongoose.connection;
 
 db.on("error", function(error) {
