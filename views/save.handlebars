@@ -10,7 +10,7 @@
       </button>
       <a class="navbar-brand" href="#">Your Saved Stories</a>
     </div>
-
+ <!-- Collect the nav links, forms, and other content-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
@@ -22,7 +22,7 @@
     </div>
   </div>
 </nav>
-
+<!-- Main container -->
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -39,7 +39,7 @@
               <h3 class="panel-title pull-left">{{this.title}}</h3>
             </div>
             <div class="col-xs-3">
-              <button id="modalbutton" type="submit" class="btn btn-default pull-right" data-toggle="modal" data-id={{this.id}} data-target="#myModal">Notes for Articles</button>
+              <button id="modalbutton" type="submit" class="btn btn-success pull-right" data-toggle="modal" data-id={{this.id}} data-target="#myModal">Notes for Articles</button>
             </div>
             <div class="col-xs-3">
               <form action="/delete/{{this.id}}?_method=DELETE method="POST">
@@ -79,15 +79,20 @@
 
 <script>
 $(document).on("click", "#modalbutton", function() {
+  // Empty the notes from the note section
   $("#notes").empty();
+  // Save the id from the button tag
   var thisId = $(this).attr("data-id");
   $("#articleID").text(thisId);
+  // Now make an ajax call for the Article
   $.ajax({
     method: "GET",
     url: "/articles/" + thisId
   })
+  //add the note information to the page
     .done(function(data) {
       console.log(data);
+      // Placeholder for notes
       $("#notes").append("<p id='actualnotes'></p>");
       if (data.notes) {
         $("#actualnotes").append("<ul id='notelist'>");
@@ -100,16 +105,21 @@ $(document).on("click", "#modalbutton", function() {
       } else {
         $('#actualnotes').text("Not too many notes.");
       }
+      // A text area to add a new note body
       $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
       $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button>");
     });
 });
+// When you click the savenote button
 $(document).on("click", "#savenote", function() {
+  // Grab the id associated with the article from the submit button
   var thisId = $(this).attr("data-id");
+  // Run a POST request to change the note, using what's entered in the inputs
   $.ajax({
     method: "POST",
     url: "/articles/" + thisId,
     data: {
+    // Value taken from note text area
       body: $("#bodyinput").val()
     }
   })
@@ -120,10 +130,14 @@ $(document).on("click", "#savenote", function() {
         "' id='deletenote'>X</button></li>");
       }
     });
+    // Remove the values entered in the input and text area for note entry
   $("#bodyinput").val("");
 });
+// When you click the deletenote button
 $(document).on("click", "#deletenote", function() {
+   // Grab the id associated with the note
   var thisId = $(this).attr("data-id");
+  // Run a POST request to delete the note
   $.ajax({
     method: "GET",
     url: "/notes/" + thisId,
