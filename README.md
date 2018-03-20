@@ -25,6 +25,6 @@ Run this command in your Terminal/Bash window:
 * This command will add the free mLab provision to your project.
 ```
 
-<a href="https://imgflip.com/gif/26pn7e"><img src="https://i.imgflip.com/26pn7e.gif" title="made at imgflip.com"/></a>
+<a href="C:\Users\Steven Laptop\Pictures\Download Pics\nyt.gif"></a>
 
 
