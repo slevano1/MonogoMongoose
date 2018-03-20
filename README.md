@@ -26,5 +26,5 @@ Run this command in your Terminal/Bash window:
 ```
 
 
-![.gif of working customer file](images/nytimes.gif)
+![.gif of working customer file](https://media.giphy.com/media/1rM28OKDu864pNnjNF/giphy.gif)
 
