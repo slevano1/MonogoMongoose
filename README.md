@@ -25,6 +25,5 @@ Run this command in your Terminal/Bash window:
 * This command will add the free mLab provision to your project.
 ```
 
-<a href="C:\Users\Steven Laptop\Pictures\Download Pics\nyt.gif"></a>
-
+<h1 align="center">App in Action 🎬 <a href="http://www.screentogif.com/" target="_blank">screentogif.com</a></h1>
 
