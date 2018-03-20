@@ -26,5 +26,10 @@ Run this command in your Terminal/Bash window:
 ```
 
 
+### Activate Scraping Function and Save The Article
 ![.gif of working customer file](https://media.giphy.com/media/1rM28OKDu864pNnjNF/giphy.gif)
+
+
+### Add Comments to Saved Article and Delete Unwanted Articles
+![.gif of working customer file](https://media.giphy.com/media/7OX3QdICcolzBI9y0S/giphy.gif)
 
